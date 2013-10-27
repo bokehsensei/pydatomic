@@ -1,7 +1,7 @@
 pydatomic
 =========
 
-Python library for accessing the datomic DBMS via the `REST API <http://docs.datomic.com/rest.html>`_.
+Python 3 library for accessing the datomic DBMS via the `REST API <http://docs.datomic.com/rest.html>`_.
 Includes a reader for `edn <http://edn-format.org>`_.
 
 REST client
@@ -58,6 +58,18 @@ Includes a parser for most of EDN (https://github.com/edn-format/edn), featuring
 - Support for tags
 - All structures are returned as immutable objects except dicts, as Python still lacks a frozendict type.
 - Symbols and keywords are returned as strings (not unicode)
+
+
+virtual environment
+-------------------
+Optionally, you can use ./mkenv to create a virtual environment.
+This is useful if you have many versions of python installed.
+Synopsis:
+$|pydatomic> ./mkenv
+$|pydatomic> . ~/.venv/pydatomic/bin/activate
+$|pydatmoic> python --version
+> 3.3.2
+
 
 TBD
 ~~~
